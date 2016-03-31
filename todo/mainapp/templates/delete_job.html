@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+<h1>Delete Job</h1>
+Hey, are you sure you want to delete {{ job.title }}?
+<form method="post">
+  {% csrf_token %}
+  <button type="submit" class="btn btn-danger">Yeap, I'm sure.</button>
+</form>

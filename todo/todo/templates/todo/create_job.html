@@ -1,0 +1,13 @@
+<html>
+
+
+
+<body>
+<p> todo template todo create_job </p>
+<form action="/mainapp/display_jobs/" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>

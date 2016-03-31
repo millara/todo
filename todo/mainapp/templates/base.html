@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<!--DOCTYPE html-->
+<html>
+    <head>
+        <title>{% block title %} 1: My Base Template {% endblock %}</title>
+        <link rel='stylesheet' href='{% static "base.css" %}' />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        {% block script %} {% endblock %}
+    </head>
+    
+    <body>
+        
+        <div><!-- Header -->
+            <p> this is the header </p>
+        </div>
+
+        <div id="sidemenu"><!-- Side Menu -->   
+            <ul id="navmenu">
+                <li> <a href="http://127.0.0.1:8000/mainapp/add_job/"> Add new Job </a></li>
+            </ul> 
+        </div>
+
+        <div><!-- Main Content -->
+            {% block body_block %} body block default content {% endblock %}
+        </div>
+
+         <div><!-- Footer -->   
+            <p> this is the footer </p>
+        </div>
+
+    </body>
+</html>
