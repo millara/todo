@@ -5,10 +5,21 @@ import datetime
 from django.views.decorators.csrf import csrf_protect
 from django.views.generic.edit import DeleteView  # this is the generic view
 from django.core.urlresolvers import reverse_lazy
-
+from django.views.generic import ListView, CreateView
 from .models import Job
 from .forms import CreateJobForm
 from .forms import AddJobForm
+
+
+class JobList(ListView):
+    model = Job
+
+
+class JobCreateView(CreateView):
+    model = Job
+    fields = ['title', 'start_date', 'finish_date']
+    success_url="/mainapp/jobs"
+    #template_name = "job_create_form.html"
 
 
 def home(request):
@@ -59,21 +70,22 @@ def create_job_test(request):
     return render(request, 'mainapp/create_job.html', {'form': form})
 
 
-def display_jobs(request):
-    # get list of jobs then display them
-    # if request == POST???? do i need to do this like in the create
-    # job test function above in order to save the data?
-    if request.method == "POST":
-        form = AddJobForm(request.POST)
-        if form.is_valid():
-            form.save(commit=True)
-        else:
-            print(form.errors)
 
-    job_list = Job.objects.all()
-    template = loader.get_template('display_jobs.html')
-    context = {'job_list': job_list}
-    return HttpResponse(template.render(context, request))
+# def display_jobs(request):
+#     # get list of jobs then display them
+#     # if request == POST???? do i need to do this like in the create
+#     # job test function above in order to save the data?
+#     if request.method == "POST":
+#         form = AddJobForm(request.POST)
+#         if form.is_valid():
+#             form.save(commit=True)
+#         else:
+#             print(form.errors)
+
+#     job_list = Job.objects.all()
+#     template = loader.get_template('display_jobs.html')
+#     context = {'job_list': job_list}
+#     return HttpResponse(template.render(context, request))
 
 
 def current_datetime(request):
@@ -81,7 +93,7 @@ def current_datetime(request):
     html = "<html><body>It is now %s.</body></html>" % now
     return HttpResponse(html)
 
-
+# Subclass the generic DeleteViewleteView
 class JobDelete(DeleteView):
     model = Job
     success_url = reverse_lazy('display-jobs')
