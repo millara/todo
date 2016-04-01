@@ -8,7 +8,7 @@
     </script>
 
 {% block body_block %}
-    <form action="/mainapp/display_jobs/" method="post">{% csrf_token %}
+    <form action="/mainapp/jobs/" method="post">{% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="Submit" />
     </form>
