@@ -21,6 +21,9 @@ class JobCreateView(CreateView):
     success_url="/mainapp/jobs"
     #template_name = "job_create_form.html"
 
+class JobDeleteView(DeleteView):
+    model = Job
+    success_url = reverse_lazy('jobs')
 
 def home(request):
     hello = "hello view"

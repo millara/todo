@@ -8,7 +8,7 @@ from mainapp.models import Job
 
 app_name = 'mainapp'
 urlpatterns = [
-    url(r'^jobs/$', views.JobList.as_view()),
+    url(r'^jobs/$', views.JobList.as_view(), 'jobs'),
     url(r'^create_job/$', views.JobCreateView.as_view()),
     #url(r'^add_job/', views.job_create, name='add job'),
     #url(r'^display_jobs/', views.display_jobs, name='display-jobs'),

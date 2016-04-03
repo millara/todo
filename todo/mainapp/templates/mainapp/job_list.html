@@ -4,7 +4,7 @@
     <h2>Jobs</h2>
     <ul>
         {% for job in job_list %}
-            <li>{{ job.title }}</li>
+            <li>{{ job.title }} {% include "mainapp/delete_job_form.html" %}</li>
         {% endfor %}
     </ul>
 {% endblock %}
