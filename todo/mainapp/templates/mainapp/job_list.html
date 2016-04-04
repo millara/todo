@@ -4,7 +4,11 @@
     <h2>Jobs</h2>
     <ul>
         {% for job in job_list %}
-            <li>{{ job.title }} {% include "mainapp/delete_job_form.html" %}</li>
+            <li>{{ job.title }} 
+                {% if job.id %}
+                    <a href="{% url "mainapp:delete-job" pk=job.id %}">Delete</a>
+                {% endif %}
+            </li>
         {% endfor %}
     </ul>
 {% endblock %}
