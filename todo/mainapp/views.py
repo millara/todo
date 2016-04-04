@@ -4,7 +4,7 @@ from django.template import loader
 import datetime
 from django.views.decorators.csrf import csrf_protect
 from django.views.generic.edit import DeleteView  # this is the generic view
-from django.core.urlresolvers import reverse_lazy
+from django.core.urlresolvers import reverse_lazy, reverse
 from django.views.generic import ListView, CreateView
 from .models import Job
 from .forms import CreateJobForm
@@ -96,5 +96,6 @@ def current_datetime(request):
 # Subclass the generic DeleteViewleteView
 class JobDelete(DeleteView):
     model = Job
-    success_url = reverse_lazy('display-jobs')
-    template_name = 'delete_job.html'
+    #template_name = 'delete_job.html'
+    def get_success_url(self):
+        return reverse('mainapp:jobs')
