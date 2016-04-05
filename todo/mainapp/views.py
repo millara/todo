@@ -15,11 +15,11 @@ class JobList(ListView):
     model = Job
 
 
-class JobCreateView(CreateView):
-    model = Job
-    fields = ['title', 'start_date', 'finish_date']
-    success_url="/mainapp/jobs"
-    #template_name = "job_create_form.html"
+# class JobCreateView(CreateView):
+#     model = Job
+#     fields = ['title', 'start_date', 'finish_date']
+#     success_url="/mainapp/jobs"
+#     template_name = "mainapp/job_form.html"
 
 
 class JobDelete(DeleteView):
@@ -27,6 +27,10 @@ class JobDelete(DeleteView):
     def get_success_url(self):
         return reverse('mainapp:jobs')
 
+class JobCreateView(CreateView):
+    form_class = CreateJobForm
+    model = Job
+    success_url="/mainapp/jobs"
 
 def home(request):
     hello = "hello view"
