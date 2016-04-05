@@ -7,9 +7,10 @@
     <ul>
         {% for job in job_list %}
             <li>{{ job.title }} 
-                {% if job.id %}
-                    <a href="{% url "mainapp:delete-job" pk=job.id %}">Delete</a>
-                {% endif %}
+                <li>Start Date ={{ job.start_date }}</li><li>Finish Date ={{ job.finish_date }}</li>
+                    {% if job.id %}
+                        <a href="{% url "mainapp:delete-job" pk=job.id %}">Delete</a>
+                    {% endif %}
             </li>
         {% endfor %}
     </ul>
