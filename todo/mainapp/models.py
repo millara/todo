@@ -14,11 +14,13 @@ class Job(models.Model):
     start_date = models.DateField(default=timezone.now)
     finish_date = models.DateField(default=timezone.now)
 
-    # def get_absolute_url(self):
-    #     return reverse('mainapp.views.jobs')
+    class Meta:
+        ordering = ['finish_date']
 
-    def __str__(self):
-        return self.title
+
+
+    # def __str__(self):
+    #     return self.title
 
     #def days_left(self):
         #return (self.finish_date - self.start_date).days
