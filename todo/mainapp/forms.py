@@ -3,18 +3,24 @@ import datetime
 from .models import Job
 from django.forms.extras.widgets import SelectDateWidget
 
-# class CreateJobForm(forms.Form):
-#     job_title = forms.CharField(label='Job Title', max_length=100)
 
 class CreateJobForm(forms.ModelForm):
-    start_date = forms.DateField(widget=SelectDateWidget(empty_label="Nothing"))
-    finish_date = forms.DateField(widget=SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day"),),)
-    class Meta:
-        model = Job
-        fields = ['title', 'start_date', 'finish_date']
-        #widgets = {'date': DateInput(attrs={'class': 'datepicker'})}
+    #start_date = forms.DateField(initial=datetime.date.today())
+    finish_date = forms.DateField(initial=datetime.date.today(),
+                                  widget=SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day"),),)
+    title = forms.CharField(initial='Title',)
 
-class AddJobForm(forms.ModelForm):
     class Meta:
         model = Job
-        fields = '__all__'
+        #fields = ['title', 'finish_date',]
+        exclude = ['start_date']
+        #widgets = {'finish_date': forms.SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day"),)}
+
+    #https://docs.djangoproject.com/en/1.9/ref/forms/validation/#cleaning-a-specific-field-attribute
+    def clean(self):
+        #start  = self.cleaned_data['start_date']
+        finish = self.cleaned_data['finish_date']
+        if finish < datetime.date.today():
+            raise forms.ValidationError('The finish date must be in the future', code='invalid finish date')
+        return finish
+

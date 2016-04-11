@@ -11,7 +11,7 @@ from django.core.urlresolvers import reverse
 
 class Job(models.Model):
     title = models.CharField(max_length=100)
-    start_date = models.DateField(default=timezone.now)
+    start_date = models.DateField(auto_now_add = True)
     finish_date = models.DateField(default=timezone.now)
 
     class Meta:
