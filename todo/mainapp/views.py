@@ -26,16 +26,13 @@ def job_create(request):
     if request.method == 'POST':
         form = CreateJobForm(request.POST)
         if form.is_valid():
-            form.clean_dates()
             # https://docs.djangoproject.com/en/1.9/topics/forms/#field-data
             form.save()
             return HttpResponseRedirect(reverse('mainapp:jobs'))
-    #else:
-        # validation is required, empty title field causes error
+    # validation is required, empty title field causes error
     else:
         form = CreateJobForm()
     args['form'] = form
-    #context = {'form': form}
     return render(request, 'mainapp/job_form.html', args)
 
 
