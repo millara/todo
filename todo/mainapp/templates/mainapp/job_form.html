@@ -2,18 +2,10 @@
 {% block script %}
     
 {% endblock script %}
-{% block body_block %}
+{% block content %}
     <p>is it working?</p>
     <form action="" method="post">{% csrf_token %}
-        {{ form.non_field_errors }}
-        {% if form.errors %}
-            {{ form.errors|pluralize }}
-        {% endif %}
-        {% for field in form %}
-            {{ field.error }}
-            {{ field.field.error }}
-        {% endfor %}
-        {{ form}} 
+        {{ form.as_p}} 
         <input type="submit" value="Save" />
     </form>
-{% endblock body_block %}
+{% endblock content %}

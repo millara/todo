@@ -33,10 +33,44 @@ a:hover {
     background: #900;
     color: #FFF;
     }
-ul#joblist,
-ul#joblist li{
-    color: #100;
+.delete-neary-complete{
+    background: #fff;
 }
+
+
+table#joblist th{
+    text-align: left;
+}
+table#joblist td, th{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+table#joblist tr:nth-child(even) {
+    background-color: #eee;
+}
+table#joblist tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* used only for the delete button on the joblist table*/
+.deadline-approaching{
+    background-color: #900 !important;
+    color: #000 !important;
+    font-weight: bold;
+}
+.deadline-approaching a{
+    background-color: #900 !important;
+    color: #000 !important;
+}
+.deadline-approaching a:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+
+/* this navigation menu is blatently ripped off from one of those template sites, cant remember which one :/
 /* Root = Vertical, Secondary = Vertical */
 #navmenu{
     position: absolute;
@@ -46,7 +80,7 @@ ul#joblist li{
 ul#navmenu,
 ul#navmenu li,
 ul#navmenu ul {
-    margin: 0;
+    margin: 0 10;
     border: 0 none;
     padding: 0;
     width: 160px; /*For KHTML*/
@@ -76,9 +110,9 @@ ul#navmenu a {
     border-bottom-color: #CCC;
     padding: 0 6px;
     display: block;
-    background: #EEE;
+    background: #FFF;
     color: #666;
-    font: bold 10px/22px Verdana, Arial, Helvetica, sans-serif;
+    font: bold 15px/27px Verdana, Arial, Helvetica, sans-serif;
     text-decoration: none;
     height: auto !important;
     height: 1%; /*For IE*/
@@ -88,8 +122,8 @@ ul#navmenu a {
 ul#navmenu a:hover,
 ul#navmenu li:hover a,
 ul#navmenu li.iehover a {
-    background: #CCC;
-    color: #FFF;
+    background: #FFFFFF;
+    color: #900;
     }
 
 /* 2nd Menu */

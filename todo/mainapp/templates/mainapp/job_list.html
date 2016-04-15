@@ -2,16 +2,36 @@
 {% block title%}
     Jobs
 {% endblock title %}
-{% block body_block %}
+{% block content %}
     <h2>Jobs</h2>
-    <ul>
+    <table id='joblist'>
+        <tr>
+            <th>Title</th>
+            <th>Start Date</th>
+            <th>Finish Date</th>
+            <th>Days remaining</th>
+        </tr>
+
+        
         {% for job in job_list %}
-            <li>{{ job.title }} 
-                <li>Start Date ={{ job.start_date }}</li><li>Finish Date ={{ job.finish_date }}</li>
-                    {% if job.id %}
-                        <a href="{% url "mainapp:delete-job" pk=job.id %}">Delete</a>
-                    {% endif %}
-            </li>
+            {% if job.days_left < 3 %}
+                <tr class='deadline-approaching'>
+            {% else %}
+                <tr>
+            {% endif %}
+                    <td>{{ job.title }} </td>
+                    <td>{{ job.start_date }}</td>
+                    <td>{{ job.finish_date }}</td>
+                    <td >{{ job.days_left }}</td>
+                    <td>{% if job.id and job.days_left < 3 %}
+                            <a href="{% url "mainapp:delete-job" pk=job.id %}">Delete</a>
+                        {% else %}
+                            <a href="{% url "mainapp:delete-job" pk=job.id %}">Delete</a>
+                        {% endif %}</td>
+                </tr>
         {% endfor %}
-    </ul>
-{% endblock %}
+    </table>
+
+
+    
+{% endblock content%}

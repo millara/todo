@@ -2,7 +2,7 @@
 
 {% block title %}Confirm deletion of {{ job.title }}{% endblock title %}
 
-{% block body_block %}
+{% block content %}
 
     <h1>Delete Job</h1>
 
@@ -13,4 +13,4 @@
         <a href="{% url "mainapp:jobs" %}">No, cancel.</a>
     </form>
 
-{% endblock %}
+{% endblock content%}

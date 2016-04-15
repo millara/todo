@@ -6,7 +6,6 @@ from django.core.urlresolvers import reverse
 # Change your models (in models.py).
 # Run python manage.py makemigrations to create migrations for those changes
 # Run python manage.py migrate to apply those changes to the database.
-# Create your models here.
 
 
 class Job(models.Model):
@@ -17,10 +16,9 @@ class Job(models.Model):
     class Meta:
         ordering = ['finish_date']
 
-
+    @property
+    def days_left(self):
+        return abs(( self.finish_date - datetime.date.today() ).days )
 
     # def __str__(self):
     #     return self.title
-
-    #def days_left(self):
-        #return (self.finish_date - self.start_date).days

@@ -13,6 +13,15 @@ from .forms import CreateJobForm
 
 class JobList(ListView):
     model = Job
+    # days_left = days_left()
+
+
+# def job_list(request):
+#     jobs = jobs.objects.all()
+#     context = {
+#         'jobs': jobs
+#     }
+#     return render(request, 'mainapp/job_list.html', context)
 
 
 class JobDelete(DeleteView):
@@ -35,6 +44,10 @@ def job_create(request):
     args['form'] = form
     return render(request, 'mainapp/job_form.html', args)
 
+def days_left(d1, d2):
+    d1 = datetime.strptime(d1, "%Y-%m-%d")
+    d2 = datetime.strptime(d2, "%Y-%m-%d")
+    return abs((d2 - d1).days)
 
 def home(request):
     hello = "hello view"
