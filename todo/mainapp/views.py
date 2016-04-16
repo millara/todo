@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render, get_list_or_404, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 import datetime
@@ -16,13 +16,13 @@ class JobList(ListView):
     # days_left = days_left()
 
 
-# def job_list(request):
-#     jobs = jobs.objects.all()
-#     context = {
-#         'jobs': jobs
-#     }
-#     return render(request, 'mainapp/job_list.html', context)
-
+def job_update(request, pk, template_name='mainapp/job_form.html'):
+    job = get_object_or_404(Job, pk=pk)
+    form = CreateJobForm(request.POST or None, instance=job)
+    if form.is_valid():
+        form.save()
+        return redirect('mainapp:jobs')
+    return render(request, template_name, {'form':form})
 
 class JobDelete(DeleteView):
     model = Job
