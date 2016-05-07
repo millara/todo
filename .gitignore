@@ -1,4 +1,5 @@
 *.pyc
 settings.py
 *.json
-media/temp 
+*.sqlite3
+media/temp

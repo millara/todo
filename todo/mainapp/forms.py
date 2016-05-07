@@ -9,7 +9,7 @@ class CreateJobForm(forms.ModelForm):
                                   widget=SelectDateWidget(empty_label=("Choose Year",
                                                                        "Choose Month",
                                                                        "Choose Day"),),)
-    title = forms.CharField(initial='Title',)
+    title = forms.CharField()
 
     class Meta:
         model = Job
