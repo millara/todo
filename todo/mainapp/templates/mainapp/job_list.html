@@ -25,8 +25,11 @@
                     <td >{{ job.days_left }}</td>
                     <td>{% if job.id and job.days_left < 3 %}
                             <a href="{% url "mainapp:delete-job" pk=job.id %}">Delete</a>
+                            <a href="{% url "mainapp:job-edit" pk=job.id %}">Edit</a>
                         {% else %}
                             <a href="{% url "mainapp:delete-job" pk=job.id %}">Delete</a>
+                            <a href="{% url "mainapp:job-edit" pk=job.id %}">Edit</a>
+
                         {% endif %}</td>
                 </tr>
         {% endfor %}
