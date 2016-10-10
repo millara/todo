@@ -59,4 +59,4 @@ def days_left(d1, d2):
 
 def home(request):
     hello = "hello view"
-    return HttpResponse(hello)
+    return HttpResponse(JobList)

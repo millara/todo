@@ -1,0 +1,542 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"templa",
+				"template_name"
+			],
+			[
+				"password",
+				"password_reset"
+			],
+			[
+				"is",
+				"is_authenticated	(login.html)"
+			],
+			[
+				"ur",
+				"urls"
+			],
+			[
+				"con",
+				"contrib"
+			],
+			[
+				"H",
+				"HttpResponseRedirect"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"day",
+				"days_left	(views.py)"
+			],
+			[
+				"start",
+				"start_date"
+			],
+			[
+				"da",
+				"datetime〔class〕"
+			],
+			[
+				"time",
+				"timedelta〔class〕"
+			],
+			[
+				"Cre",
+				"CreateJobForm"
+			],
+			[
+				"order",
+				"ordered_jobs	(views.py)"
+			],
+			[
+				"ordere",
+				"ordered_jobs"
+			],
+			[
+				"or",
+				"order_by	(models.py)"
+			],
+			[
+				"Da",
+				"DateField	(models.py)"
+			],
+			[
+				"date",
+				"datetime	(views.py)"
+			],
+			[
+				"script",
+				"script	(base.html)"
+			],
+			[
+				"Model",
+				"ModelForm	ModelForm"
+			],
+			[
+				"Mo",
+				"ModelForm	ModelForm"
+			],
+			[
+				"tit",
+				"title	Tag"
+			],
+			[
+				"title",
+				"title	(views.py)"
+			],
+			[
+				"rever",
+				"reverse	(models.py)"
+			],
+			[
+				"inc",
+				"include	include"
+			],
+			[
+				"ext",
+				"extends	extends"
+			],
+			[
+				"su",
+				"success_url"
+			],
+			[
+				"delete",
+				"delete_job"
+			],
+			[
+				"pa",
+				"payment〔argument〕"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"job",
+				"job_list"
+			],
+			[
+				"s",
+				"save"
+			],
+			[
+				"display",
+				"display_jobs"
+			],
+			[
+				"displa",
+				"display_jobs"
+			],
+			[
+				"crea",
+				"CreateJobForm	class"
+			],
+			[
+				"c",
+				"CreateJobForm	class"
+			],
+			[
+				"fo",
+				"forms	module"
+			],
+			[
+				"jo",
+				"Job"
+			],
+			[
+				"htt",
+				"HttpResponse	import"
+			],
+			[
+				"ht",
+				"HttpResponse	import"
+			],
+			[
+				"finish",
+				"finish_date"
+			],
+			[
+				"qu",
+				"question	statement"
+			],
+			[
+				"get",
+				"get_object_or_404	import"
+			],
+			[
+				"que",
+				"question_id"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 297.0,
+		"last_filter": "pac",
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"git qui",
+				"Git: Quick Commit"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"comm",
+				"Git: Quick Commit"
+			],
+			[
+				"ad",
+				"Git: Add All"
+			],
+			[
+				"com",
+				"Git: Quick Commit"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"git de",
+				"Git: Delete Branch"
+			],
+			[
+				"bra",
+				"Git: Change Branch"
+			],
+			[
+				"bran",
+				"Git: New Branch"
+			],
+			[
+				"br",
+				"Git: Delete Branch"
+			],
+			[
+				"mer",
+				"Git: Merge Branch"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"quic",
+				"Git: Quick Commit"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"",
+				"Build: New Build System"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 56.0,
+		"history":
+		[
+			"git branch",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/alex/django/todo-site/todo/mainapp/templates/registration/password_reset_form.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/mainapp/home.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/registration/login.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/registration/password_reset_email.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/base.html",
+		"/home/alex/django/todo-site/todo/todo/settings.py",
+		"/home/alex/django/todo-site/todo/mainapp/models.py",
+		"/home/alex/django/todo-site/todo/mainapp/views.py",
+		"/home/alex/django/todo-site/todo/mainapp/templates/registration/logged_out.html",
+		"/home/alex/django/todo-site/todo/mainapp/urls.py",
+		"/home/alex/django/todo-site/todo/todo/urls.py",
+		"/home/alex/django/todo-site/todo/mainapp/templates/mainapp/add_job_form.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/registration/password_reset_done.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/registration/password_reset_confirm.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/registration/password_reset_complete.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/registration/password_change_form.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/registration/password_change_done.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/mainapp/job_confirm_delete.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/mainapp/job_list.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/mainapp/create_job.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/mainapp/base.html",
+		"/home/alex/django/todo-site/todo/mainapp/forms.py",
+		"/home/alex/django/dt/dreamteam/dreamteam/settings.py",
+		"/home/alex/django/dt/dreamteam/teams/views.py",
+		"/home/alex/django/dt/dreamteam/teams/templates/teams/home.html",
+		"/home/alex/django/dt/dreamteam/teams/urls.py",
+		"/home/alex/django/dt/dreamteam/dreamteam/urls.py",
+		"/home/alex/django/todo-site/todo/static/base.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/mainapp/job_form.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/mainapp/todolist.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/mainapp/todo-list.html",
+		"/home/alex/django/todo-site/todo/static/base.css",
+		"/home/alex/django/todo-site/todo/mainapp/tests.py",
+		"/home/alex/django/todo-site/todo/manage.py",
+		"/home/alex/django/todo-site/todo/todo/wsgi.py",
+		"/home/alex/django/todo-site/todo/mainapp/apps.py",
+		"/home/alex/.config/sublime-text-3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/home/alex/django/eclipse-todo-site/todo/todo/settings.py",
+		"/home/alex/django/todo-site/todo/mainapp/templates/delete_job.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/display_jobs.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/create_job.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/add_job_form.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/job_deleted.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/job_list.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/jobs/job_list.html",
+		"/home/alex/.config/sublime-text-3/Packages/User/HTML (Django).sublime-settings",
+		"/home/alex/.config/sublime-text-3/Packages/Djaneiro/Settings/HTML (Django).sublime-settings",
+		"/home/alex/.config/sublime-text-3/Packages/User/Python (Django).sublime-settings",
+		"/home/alex/.config/sublime-text-3/Packages/Djaneiro/Settings/Python (Django).sublime-settings",
+		"/home/alex/django/todo-site/todo/mainapp/static/delete_job.js",
+		"/home/alex/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/alex/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/alex/django/todo-site/todo/mainapp/templates/todolist.html",
+		"/home/alex/django/todo-site/todo/mainapp/templates/todo-list.html",
+		"/home/alex/django/todo-site/todo/todo/templates/todo/add_job_form.html",
+		"/home/alex/django/todo-site/todo/todo/templates/todo/display_jobs.html",
+		"/home/alex/django/todo-site/todo/static/datepicker.js",
+		"/home/alex/django/todo-site/todo/todo/templates/todo/create_job.html",
+		"/home/alex/django/todo-site/todo/todo/templates/todo/base.html",
+		"/home/alex/django/todo-site/todo/todo/templates/base.html",
+		"/home/alex/django/todo-site/todo/todo/templates/todo/base.html~",
+		"/home/alex/django/todo-site/project_todo_list",
+		"/home/alex/.config/sublime-text-3/Packages/User/HTML.sublime-settings",
+		"/home/alex/.config/sublime-text-3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/home/alex/django/todo-site/todo/mainapp/admin.py",
+		"/home/alex/django/mysite/polls/urls.py",
+		"/home/alex/django/mysite/mysite/urls.py",
+		"/home/alex/django/todo/todo/jobs/models.py",
+		"/home/alex/django/mysite/mysite/settings.py",
+		"/home/alex/django/todo/todo/jobs/urls.py",
+		"/home/alex/django/todo/todo/todo/templates/base.html",
+		"/home/alex/django/todo/todo/jobs/forms.py",
+		"/home/alex/django/todo/todo/jobs/templates/jobs/create_job_form.html",
+		"/home/alex/django/todo/todo/jobs/views.py",
+		"/home/alex/django/todo/todo/jobs/template.html",
+		"/home/alex/django/todo/todo/jobs/templates/jobs/detail.html",
+		"/home/alex/django/todo/todo/todo/settings.py",
+		"/home/alex/django/todo/todo/manage.py",
+		"/home/alex/django/todo/todo/todo/urls.py",
+		"/home/alex/django/mysite/polls/models.py",
+		"/home/alex/django/mysite/polls/templates/polls/detail.html",
+		"/home/alex/django/mysite/polls/templates/polls/results.html",
+		"/home/alex/django/mysite/polls/templates/polls/index.html",
+		"/home/alex/django/mysite/polls/tests.py",
+		"/home/alex/django/mysite/polls/views.py",
+		"/home/alex/django/mysite/polls/admin.py",
+		"/home/alex/.config/sublime-text-3/Packages/Anaconda/Default (Linux).sublime-keymap",
+		"/home/alex/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/alex/django/mysite/manage.py",
+		"/home/alex/django/mysite/polls/templates"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/alex/django/todo-site/todo/mainapp/templates/mainapp/base.html"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hello",
+			"omg!",
+			"html",
+			"url(r'^create_job/', views.JobCreateView.as_view(), name='create-job'),",
+			"olls"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"html",
+			"omg!"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.481378186541,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 106.0
+	},
+	"pinned_build_system": "",
+	"project": "todo.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"abse",
+				"mainapp/templates/base.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 319.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

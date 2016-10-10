@@ -18,7 +18,8 @@ class Job(models.Model):
 
     @property
     def days_left(self):
-        return abs(( self.finish_date - datetime.date.today() ).days )
+        return ( self.finish_date - datetime.date.today() ).days 
+ 
 
     # def __str__(self):
     #     return self.title

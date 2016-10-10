@@ -14,7 +14,7 @@ urlpatterns = [
     url(r'^delete_job/(?P<pk>\d+)/$', views.JobDelete.as_view(), name='delete-job'),
     url(r'^job_deleted/', views.JobDelete.as_view(), name="job-deleted"),
     url(r'^edit/(?P<pk>\d+)$', views.job_update, name='job-edit'),
-    url(r'^$', views.home, name='home'),
+    url(r'^$', views.JobList.as_view(), name='home'),
 ]
 
 if settings.DEBUG:
